@@ -1,7 +1,38 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.name-container {
+  padding: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
-  max-width: 200px;
-  margin: auto;
-  padding: 12px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.header-container a {
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+}
+.header-container a:link {
+  color: black;
+}
+.header-container a:visited  {
+  color: black;
+}
+.header-container a:hover {
+  border-bottom: black 2px solid;
+}
+
+.header-container a:active,
+.header-container a.active {
+  border-bottom: black 2px solid;
 }

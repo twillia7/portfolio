@@ -9,19 +9,23 @@ import Header from './header/Header'
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/about" exact>
-          <About />
-        </Route>
-        <Route path="/work" exact>
-          <Work />
-        </Route>
-        <Redirect to="/" />
-      </Switch>
+      <div className='headerCss'>
+        <Header />
+      </div>
+      <div className='bodyCss'>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route path="/work" exact>
+            <Work />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </div>
     </Router>
   )
 }
